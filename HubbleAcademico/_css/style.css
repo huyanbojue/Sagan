@@ -1,0 +1,170 @@
+﻿
+/*-------------------------------------------------------HOME--------------------------------------------------------*/
+body {
+    width: 100%;
+    margin:0!important;
+   padding:0!important;
+}
+
+div.progress {
+    height: 2rem !important;
+}
+
+p, h1, h2, h3, h4, h5, label, span {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.nav-link, .dropdown-item {
+    cursor: pointer;
+}
+
+#drop_esqueciSenha {
+    color: white;
+}
+
+button.btnAbreModalCad {
+    color: #8E3391;
+    border-color: #8E3391;
+}
+
+    button.btnAbreModalCad:hover {
+        background-color: #8E3391;
+    }
+
+@media only screen and (max-width: 389px) {
+
+
+    div#pnl_conteudoLivre {
+        width: 73%;
+    }
+}
+
+#pnl_conteudoInicial {
+    width: 100%;
+}
+
+.itemDesenvolvedor {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .control-header {
+        margin-bottom: 10px;
+    }
+
+    div#pnl_login {
+        padding: 20px;
+    }
+}
+
+.areaProgressoMateria {
+    margin-bottom: 50px;
+}
+/*------------------------------------------------------------CADASTRO------------------------------------------------------------*/
+
+/*---------------------------------------------------RECUPERACAO DE SENHA-----------------------------------------------------*/
+
+input.inputRec {
+    opacity: .7
+}
+/*-------------------------------------------------------SOBRE MIM--------------------------------------------------------*/
+
+.card-body {
+    padding: 25px 13% 25px 13%;
+}
+
+.card-about {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: rgba(255,255,255,.80);
+}
+
+    .card-about .box-about {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+        .card-about .box-about .img-about {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+            .card-about .box-about .img-about img {
+                width: 100%;
+                height: 100%;
+            }
+
+        .card-about .box-about h2 {
+            font-size: 20px;
+            color: #262626;
+            margin: 20px auto;
+        }
+
+            .card-about .box-about h2 span {
+                font-size: 14px;
+                background: #8D3390;
+                color: #fff;
+                display: inline-block;
+                padding: 4px 10px;
+                border-radius: 15px;
+            }
+
+        .card-about .box-about p {
+            color: black;
+            font-weight: 00;
+        }
+
+        .card-about .box-about span {
+            display: inline-flex;
+        }
+
+        .card-about .box-about ul {
+            margin: 0;
+            padding: 0;
+        }
+
+            .card-about .box-about ul li {
+                list-style: none;
+                float: left;
+            }
+
+                .card-about .box-about ul li a {
+                    display: block;
+                    color: #aaa;
+                    margin: 0 10px;
+                    font-size: 20px;
+                    transition: 0.5s;
+                    text-align: center;
+                }
+
+                .card-about .box-about ul li:hover a {
+                    color: #8E3391;
+                    transform: rotateY(360deg);
+                }
+
+/*--------------------------------------------------------SUGESTOES--------------------------------------------*/
+
+/*-----------------------------------------------------------GERAL-------------------------------------------------*/
+div.modal{
+    background-image:url(../_img/bgModal.jpg)
+}
+input.inpt {
+    color: black !important;
+    font-family: 'Nunito', sans-serif !important;
+}
+label.lblCampo{
+    font-weight:600;
+}

@@ -1,0 +1,367 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF1B8506-5D91-42E6-9D82-DD9281060450}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HubbleAcademico</RootNamespace>
+    <AssemblyName>HubbleAcademico</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Default.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_1011.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_1020.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_1024.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_1026.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2010.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2020.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2033.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2044.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2045.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2046.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2048.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2051.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2061.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2071.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2084.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_2086.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_5030.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_6000.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\10_7.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\9_2032.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\bolinha.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\cabecalhofundo.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\espaco%281%29.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\espaco.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\estilos.css" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\logo-cliente.jpg" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\logocabecalho.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\moduloaluno.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\muda.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\sair.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\tabrodapemcgrande_A.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\tabrodapemcgrande_B.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\tabtopmcgrande_A.gif" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\tabtopmcgrande_B.gif" />
+    <Content Include="Teste.aspx" />
+    <Content Include="UI\WF\WUC_GRAFICOS_AREAS_CONHECIMENTO.ascx" />
+    <Content Include="UI\WF\WUC_INFORMACOES_RELEVANTES.ascx" />
+    <Content Include="UI\WF\WUC_PROGRESSO_DISCIPLINAS.ascx" />
+    <Content Include="UI\WUC\WUC_CADASTRO.ascx" />
+    <Content Include="UI\WUC\WUC_DOACOES.ascx" />
+    <Content Include="UI\WUC\WUC_FOOTER.ascx" />
+    <Content Include="UI\WUC\WUC_MENU_LATERAL.ascx" />
+    <Content Include="UI\WUC\WUC_NAV.ascx" />
+    <Content Include="UI\WUC\WUC_LOGIN.ascx" />
+    <Content Include="UI\WUC\WUC_SOBRE.ascx" />
+    <Content Include="UI\WUC\WUC_FEEDBACK.ascx" />
+    <Content Include="UI\WUC\WUC_RECUPERACAO_SENHA.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="_css\all.min.css" />
+    <Content Include="_css\bootstrap.min.css" />
+    <Content Include="_css\dataTables.bootstrap4.css" />
+    <Content Include="_css\fontawesome.min.css" />
+    <Content Include="_css\sb-admin.css" />
+    <Content Include="_css\style.css" />
+    <Content Include="_css\toastr.min.css" />
+    <Content Include="_img\bgModal.jpg" />
+    <Content Include="_img\carregando.gif" />
+    <Content Include="_img\imgAprovacao.jpeg" />
+    <Content Include="_img\imgFaltas.jpg" />
+    <Content Include="_img\imgInfRelevantes.jpeg" />
+    <Content Include="_img\img_btn_confirmar.gif" />
+    <Content Include="_img\loading.gif" />
+    <Content Include="_js\data.js" />
+    <Content Include="_js\drilldown.js" />
+    <Content Include="_js\script.js" />
+    <Content Include="_js\toastr.min.js" />
+    <Content Include="_img\imgCard.jpg" />
+    <Content Include="_img\imgCardAbout.jpg" />
+    <Content Include="_img\logo.png" />
+    <Content Include="_img\me.jpg" />
+    <Content Include="_js\bootstrap.bundle.min.js" />
+    <Content Include="_js\bootstrap.min.js" />
+    <Content Include="_js\datatables-demo.js" />
+    <Content Include="_js\dataTables.bootstrap4.js" />
+    <Content Include="_js\export-data.js" />
+    <Content Include="_js\exporting.js" />
+    <Content Include="_js\highcharts-3d.js" />
+    <Content Include="_js\highcharts.js" />
+    <Content Include="_js\jquery.dataTables.js" />
+    <Content Include="_js\jquery.easing.min.js" />
+    <Content Include="_js\jquery.min.js" />
+    <Content Include="_js\popper.js" />
+    <Content Include="_js\sb-admin.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Teste.aspx.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste.aspx.designer.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WF\WUC_GRAFICOS_AREAS_CONHECIMENTO.ascx.cs">
+      <DependentUpon>WUC_GRAFICOS_AREAS_CONHECIMENTO.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WF\WUC_GRAFICOS_AREAS_CONHECIMENTO.ascx.designer.cs">
+      <DependentUpon>WUC_GRAFICOS_AREAS_CONHECIMENTO.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WF\WUC_INFORMACOES_RELEVANTES.ascx.cs">
+      <DependentUpon>WUC_INFORMACOES_RELEVANTES.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WF\WUC_INFORMACOES_RELEVANTES.ascx.designer.cs">
+      <DependentUpon>WUC_INFORMACOES_RELEVANTES.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WF\WUC_PROGRESSO_DISCIPLINAS.ascx.cs">
+      <DependentUpon>WUC_PROGRESSO_DISCIPLINAS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WF\WUC_PROGRESSO_DISCIPLINAS.ascx.designer.cs">
+      <DependentUpon>WUC_PROGRESSO_DISCIPLINAS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_DOACOES.ascx.cs">
+      <DependentUpon>WUC_DOACOES.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_DOACOES.ascx.designer.cs">
+      <DependentUpon>WUC_DOACOES.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_FOOTER.ascx.cs">
+      <DependentUpon>WUC_FOOTER.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_FOOTER.ascx.designer.cs">
+      <DependentUpon>WUC_FOOTER.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_MENU_LATERAL.ascx.cs">
+      <DependentUpon>WUC_MENU_LATERAL.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_MENU_LATERAL.ascx.designer.cs">
+      <DependentUpon>WUC_MENU_LATERAL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_NAV.ascx.cs">
+      <DependentUpon>WUC_NAV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_NAV.ascx.designer.cs">
+      <DependentUpon>WUC_NAV.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_LOGIN.ascx.cs">
+      <DependentUpon>WUC_LOGIN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_LOGIN.ascx.designer.cs">
+      <DependentUpon>WUC_LOGIN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_SOBRE.ascx.cs">
+      <DependentUpon>WUC_SOBRE.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_SOBRE.ascx.designer.cs">
+      <DependentUpon>WUC_SOBRE.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_FEEDBACK.ascx.cs">
+      <DependentUpon>WUC_FEEDBACK.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_FEEDBACK.ascx.designer.cs">
+      <DependentUpon>WUC_FEEDBACK.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_BLL\IMPLEMENTACAO\Conexao.cs" />
+    <Compile Include="_BLL\IMPLEMENTACAO\UsuarioSESSION.cs" />
+    <Compile Include="_BLL\SESSAO\Sessao.cs" />
+    <Compile Include="_DAL\CRUD\Crud.cs" />
+    <Compile Include="_DAL\INERFACES\IConexao.cs" />
+    <Compile Include="_DAL\INERFACES\IUsuarioSESSION.cs" />
+    <Compile Include="_DAL\ENTIDADES\Notas.cs" />
+    <Compile Include="_DAL\ENTIDADES\QAcademico.cs" />
+    <Compile Include="_DAL\ENTIDADES\Usuario.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\WUC\WUC_CADASTRO.ascx.cs">
+      <DependentUpon>WUC_CADASTRO.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_CADASTRO.ascx.designer.cs">
+      <DependentUpon>WUC_CADASTRO.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_RECUPERACAO_SENHA.ascx.cs">
+      <DependentUpon>WUC_RECUPERACAO_SENHA.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WUC\WUC_RECUPERACAO_SENHA.ascx.designer.cs">
+      <DependentUpon>WUC_RECUPERACAO_SENHA.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Email\Email.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_api\curiosidades\curiosidades.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\ga.js.download" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\jquery-1.8.2.min.js.download" />
+    <Content Include="Q-Acadêmico Web para IF - Boletim_files\layer_aguardar.js.download" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="_pdf\TERMOS DE SERVIÇO.pdf" />
+    <Content Include="_BD\HubbleDB.rar" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64671</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64671/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Selenium.Chrome.WebDriver.2.43\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Chrome.WebDriver.2.43\build\Selenium.Chrome.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.43.0\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.2.43.0\build\Selenium.WebDriver.ChromeDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\Selenium.Chrome.WebDriver.2.43\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.43\build\Selenium.Chrome.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.43.0\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.43.0\build\Selenium.WebDriver.ChromeDriver.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
